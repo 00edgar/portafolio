@@ -1,0 +1,56 @@
+#cuerpo{
+    height: 100%;
+    background-color: gray;
+}
+.encabezado{
+    display: flex;
+    gap: 5%;
+    margin: 0px;
+    padding: 0px;
+    background-color:cadetblue;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+
+}
+.boton{
+    height: 80%;
+    width: 15%;
+    background-color:rgb(5, 5, 65);
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+div{
+    background-color: aqua;
+    text-align: center;
+}
+.habilidades, .gustos{
+    background-color: rgb(2, 59, 59);
+    width: 50%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+img {
+    border-radius: 15px;
+    margin:0;
+    padding:0;
+    margin-top: 5px;
+    height: 90%;
+    margin-left: 2PX;
+}
+section{
+    display: flexbox;
+    background-color: gray;
+    text-align: center;
+}
+.prueva{
+    height: 1000px;
+    background-color: red;
+}
+.foto{
+    border-radius: 100%;
+    justify-content: right;
+}
