@@ -122,3 +122,21 @@ hr{
     height: 50%;
     margin-left: 2PX;
 }
+#habilidades{
+    justify-content: center;
+    text-align: center;
+    display: flexbox;
+    background-color: rgb(2, 59, 59);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(2, 59, 59);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
