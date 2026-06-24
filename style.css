@@ -1,142 +1,137 @@
-#cuerpo{
-    position: relative;
-    background-color: gray;
-}
-.encabezado{
-    padding: 0;
+/* General styles */
+body {
     margin: 0;
-    justify-content: center ;
-    text-align: center;
-    justify-content: center;
-    position: fixed;
-    display: flex;
-    gap: 5%;
-    margin: 0px;
-    padding: 0px;
-    background-color:cadetblue;
-    width: 100%;
-    height: 100px;
-}
-.div{ position: flexbox;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.habilidades, .gustos{
-    background-color: rgb(2, 59, 59);
-    width: 50%;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-}
-.img {
-    border-radius: 15px;
-    margin:0;
-    padding:0;
-    margin-top: 5px;
-    height: 50%;
-    margin-left: 2PX;
-}
-section{
-    display: flexbox;
-    background-color: gray;
-    text-align: center;
-}
-.foto{
-    border-radius: 100%;
-    justify-content: right;
-    justify-content: center;
-    font-size: 18px;
     font-family: 'Segoe UI', sans-serif;
-    color: white;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
-                box-shadow 0.3s ease;
-    
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
-.boton {
-    margin-top: 1%;
-    justify-content: center;
-    display: flex ;
+
+#cuerpo {
+    background-color: #e0e0e0;
+}
+
+/* Header styles */
+header.encabezado {
+    display: flex;
     align-items: center;
-    text-align: center;
-    width: 20%;
-    height: 70%;
-    font-size: 18px;
-    font-family: 'Segoe UI', sans-serif;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #5f9ea0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+header a.boton {
+    text-decoration: none;
+    font-size: 16px;
     color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
-     box-shadow 0.3s ease;
-  }
+    transition: all 0.3s ease;
+}
 
-  .boton:hover {
-
+header a.boton:hover {
     transform: scale(1.1);
-    /* La sombra se hace más profunda para dar profundidad */
-    box-shadow: 0 10px 20px rgba(167, 119, 227, 0.4);
-  }
+    box-shadow: 0 5px 15px rgba(167, 119, 227, 0.4);
+}
 
-  .boton-hermoso:active {
-    /* Efecto de "presionado" */
-    transform: scale(0.95);
+/* Section styles */
+section {
+    padding: 60px 20px;
+    margin-top: 100px;
+    text-align: center;
+}
 
+section#sobre-mi {
+    background-color: #f9f9f9;
+}
+
+section#preparacion,
+section#habilidades,
+section#proyectos {
+    background-color: #025b5b;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #444;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Image styles */
+img.foto {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+}
+
+#imagenes img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #025b5b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header.encabezado {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
     }
 
-.foto{
-    border-radius: 100%;
-    height: 30%;
-    width: 30%;
-    border: double 6px;
-}
+    header a.boton {
+        margin: 5px 0;
+    }
 
-hr{
-    border: none;
-    height: 0px;
-}
-#preparacion{
-    background-color: rgb(2, 59, 59);
-    width: 100%;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-}
-#imagen{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 15px;
-    margin:0;
-    padding:0;
-    margin-top: 5px;
-    height: 50%;
-    margin-left: 2PX;
-}
-#habilidades{
-    justify-content: center;
-    text-align: center;
-    display: flexbox;
-    background-color: rgb(2, 59, 59);
-    width: 100%;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-}
-footer{
-    background-color: rgb(2, 59, 59);
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    justify-content: center;
-    color: white;
+    section {
+        padding: 40px 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
