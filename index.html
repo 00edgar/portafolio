@@ -1,129 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edgar Polanco — Portafolio de Desarrollo Web</title>
+  <meta name="description" content="Portafolio de Edgar Manolo Polanco Sánchez: proyectos, preparación en Campuslands y habilidades en diseño de software.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body id="cuerpo">
-    <header class="encabezado">
-        <img src="imagen.png">
-        <a class="boton" href="#sobre-mi">sobre mi</a>
-        <a class="boton" href="#preparacion">preparacion</a>
-        <a class="boton" href="#inicio">inicio</a>
-        <a class="boton" href="#habilidades">habilidades</a>
-        <a class="boton" href="#proyectos">proyectos</a>
-    </header>
-    <br><br><br><br><br>
-    <div class="div">
-        <h1>PORTAFOLIO INFORMACION Y PROYECTOS</h1>
-    </div>
-    <section id="sobre-mi">SOBRE MI
-        <hr>
-        <strong>EDGAR MANOLO POLANCO SANCHEZ</strong>
-        <P>Edgar actualmente estudiante en campuslands zona 4 ciudad de Guatemala diseño de sotweare graduado de villa de los niños zona 6 Guatemala,
-           Bachiller en ciencias y letrasd con orientacion en electronica industrial. Persona integra con mejoras y aprendizaje continuo.
-        </P>
-        <div>
-            <img class="foto" src="foto.jpg">
-        </div>
-    </section>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <section id="preparacion">
-        <strong>PREPARACION</strong>  
-        <hr>
-        <hr>
-        <hr>
-        <hr>  
-        <table>
-            <th>Institución</th>
-            <th>Formación</th>
-            <th>Foto</th>
-            <tr>
-                <td>Campuslands</td>
-                <td>Diseño de sotweare</td>
-                <td><img class="foto" src="campus.png"></td>
-            </tr>
-            <tr>
-                 <td>Villa de los niños</td>
-                <td>Bachiller en ciencias y letras con orientacion en electronica industrial</td>
-                <td><img class="foto" src="villa.png" style="height: 40%;"></td>
-            </tr>
-        </table>
-    </section>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <section id="inicio">
-        <strong>INICIO  EN ESTE CAMINO DE LA TECNOLOGIA</strong>
+<body>
 
-        <p>Mi inicio en el mundo de la tecnologia fue a los 12 años, cuando me regalaron mi primera computadora. Desde entonces, me fascinó el potencial de la tecnología para transformar vidas y resolver problemas. A lo largo de los años, he explorado diferentes áreas de la tecnología, desde la programación hasta el diseño de software, y he desarrollado una pasión por crear soluciones innovadoras que puedan marcar una diferencia positiva en el mundo.</p>
-    <div id="imagenes">
-        <strong>Imágenes de mi inicio en la tecnología:</strong>
-        
-        <img class="foto" src="laboratorio.png" >
-        <img class="foto" src="carrera.png" >
-        <img class="foto" src="arduino.png">
-    </div>
-</section>
-<br><br><br><br><br>
-<section id="habilidades">
-    <strong>HABILIDADES</strong>
-    <table>
-        <th>Habilidad</th>
-         <th></th>
-        <th>Nivel</th>
-        <tr>
-            <td>Programación en Python</td>
-            <td></td>    
-            <td>Interemedio</td>
-        </tr>
-        <tr>
-            <td>Diseño de software</td>
-            <td></td>    
-            <td>Intermedio</td>
-        </tr>
-        <tr>
-            <td>Trabajo en equipo</td>
-            <td></td>    
-            <td>Avanzado</td>
-        </tr>
-    </table>
-</section>
-<br>
-<br><br><br><br>
-<section id="proyectos">
-    <strong>PROYECTOS MAS RECIENTES</strong>
-    <table>
-        <th>Proyecto</th>
-        <th></th>    
-        <th>Descripción</th>
-        <tr>
-            <td>Proyecto 1</td>
-            <td></td>    
-            <td>Desarrollo de una aplicación móvil para la gestiopn de una tienda.</td>
-        </tr>
-        <tr>
-            <td>Proyecto 2</td>
-            <td></td>    
-            <td>Creación de un sitio web para una pequeña empresa local que ofrece servicios de consultoría como inventarios.</td>
-        </tr>
-        <tr>
-            <td>Proyecto 3</td>
-            <td></td>    
-            <td>Implementación de un sistema que permite la automatización para de procesos utilizando Arduino.</td>
-        </tr>
-    </table>
-</section><br><br><br><br>
-<footer>
-    Edgar Manolo Polanco Sánchez  Abril 2026
-</footer>
+  <!-- Navegación -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#inicio" class="logo"><span class="gradient-text">Edgar</span> Polanco</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">Menú</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#preparacion">Preparación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inicio / Hero -->
+    <section id="inicio" class="hero-section">
+      <!-- Fondo SVG de Circuitos -->
+      <svg class="circuit-backdrop" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="circuit" width="80" height="80" patternUnits="userSpaceOnUse">
+            <path d="M0 40h24m0 0v-24m0 24v24m16-40h40m-20 0v40m0 0h20" fill="none" stroke="currentColor" stroke-width="1" class="circuit-line" />
+            <circle cx="24" cy="40" r="2.5" class="circuit-dot-1" />
+            <circle cx="60" cy="40" r="2.5" class="circuit-dot-2" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#circuit)" />
+      </svg>
+
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="badge">Diseño de software · Guatemala</span>
+          <h1 class="hero-title">Inicio en este camino de la <span class="gradient-text">tecnología</span></h1>
+          <p class="hero-text">
+            Hola, soy desarrollador front-end. Mi inicio en el mundo de la tecnología fue a los 12 años, cuando me regalaron mi primera computadora. Desde entonces exploro áreas como la programación y el diseño de software para crear soluciones innovadoras.
+          </p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          </div>
+        </div>
+
+        <div class="reveal delay-1">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Composición de código y tecnología" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="line"></span>Proyectos</p>
+          <h2>Soluciones que he construido</h2>
+          <p class="section-desc">Desarrollo de software, electrónica y automatización aplicada a necesidades reales.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="card project-card reveal">
+            <span class="project-id">01</span>
+            <h3>Gestión de tienda (app móvil)</h3>
+            <p>Desarrollo de una aplicación móvil para la gestión de una tienda: productos, ventas y control diario.</p>
+            <ul class="tags">
+              <li>Móvil</li><li>UI</li><li>Base de datos</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal delay-1">
+            <span class="project-id">02</span>
+            <h3>Sitio web para empresa local</h3>
+            <p>Creación de un sitio web para una pequeña empresa local que ofrece servicios de consultoría, como inventarios.</p>
+            <ul class="tags">
+              <li>Web</li><li>Diseño</li><li>Responsivo</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal delay-2">
+            <span class="project-id">03</span>
+            <h3>Automatización con Arduino</h3>
+            <p>Implementación de un sistema que permite la automatización de procesos utilizando Arduino.</p>
+            <ul class="tags">
+              <li>Arduino</li><li>Electrónica</li><li>Sensores</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal delay-3">
+            <span class="project-id">04</span>
+            <h3>Bot de Telegram con n8n</h3>
+            <p>Automatización de un bot de Telegram con n8n para responder y ejecutar flujos de trabajo.</p>
+            <ul class="tags">
+              <li>n8n</li><li>Telegram</li><li>Automatización</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal delay-4">
+            <span class="project-id">05</span>
+            <h3>Control de parqueo</h3>
+            <p>Desarrollo de un sistema de control de parqueo que incluye registro por nombre, tipo de vehículo y placa.</p>
+            <ul class="tags">
+              <li>Software</li><li>Registros</li><li>Reportes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preparación -->
+    <section id="preparacion" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="line"></span>Preparación</p>
+          <h2>Formación académica y técnica</h2>
+          <p class="section-desc">Etapas que unen la electrónica industrial con el desarrollo de software.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-place">Villa de los Niños</span>
+            <h3>Bachiller en Ciencias y Letras con orientación en Electrónica Industrial</h3>
+            <p class="timeline-location">Zona 6, Guatemala</p>
+            <p>Base sólida en electrónica, circuitos y procesos industriales, además de formación académica general.</p>
+          </div>
+
+          <div class="timeline-item reveal delay-1">
+            <span class="timeline-dot"></span>
+            <span class="timeline-place">Campuslands</span>
+            <h3>Diseño de Software</h3>
+            <p class="timeline-location">Zona 4, Ciudad de Guatemala</p>
+            <p>Formación intensiva en programación, lógica, diseño y construcción de aplicaciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="line"></span>Habilidades</p>
+          <h2>Competencias técnicas y personales</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card skill-card reveal">
+            <div class="skill-header">
+              <h3>Programación en Python</h3>
+              <span class="skill-level">Intermedio</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="65%"></div>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal delay-1">
+            <div class="skill-header">
+              <h3>Diseño de software</h3>
+              <span class="skill-level">Intermedio</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="65%"></div>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal delay-2">
+            <div class="skill-header">
+              <h3>Trabajo en equipo</h3>
+              <span class="skill-level">Avanzado</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="90%"></div>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal delay-3">
+            <div class="skill-header">
+              <h3>Inglés</h3>
+              <span class="skill-level">Intermedio</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="container about-grid">
+        <div class="reveal">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="line"></span>Sobre mí</p>
+            <h2><span class="gradient-text">Edgar Manolo Polanco Sánchez</span></h2>
+          </div>
+          <p class="about-text">
+            Actualmente soy estudiante en <strong>Campuslands</strong> (Zona 4, Guatemala) en el programa de <strong>Diseño de Software</strong>. Soy graduado de <strong>Villa de los Niños</strong> como Bachiller en Electrónica Industrial.
+          </p>
+          <div class="values-grid">
+            <div class="value-item">
+              <h4>Integridad</h4>
+              <p>Persona íntegra que asume con responsabilidad cada compromiso adquirido.</p>
+            </div>
+            <div class="value-item">
+              <h4>Mejora continua</h4>
+              <p>Busco mejorar en cada proyecto, revisando resultados y corrigiendo procesos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Foto / Placeholder -->
+        <div class="reveal delay-1">
+          <figure class="profile-card">
+            <div class="glow-backdrop"></div>
+            <div class="profile-box">
+              <div class="avatar-placeholder">
+                <span class="gradient-text avatar-initials">EP</span>
+                <p>Espacio para mi foto</p>
+              </div>
+            </div>
+            <figcaption>Edgar Manolo Polanco Sánchez</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
