@@ -41,6 +41,20 @@ const translations = {
     projectArduinoTitle: "Microcontroladores y sensores",
     projectArduinoText: "Programación de Arduino Uno y Mega para automatizar procesos; diseño y simulación de circuitos en Proteus antes del montaje, con soporte técnico e instrumentación de sensores.",
     tagSensors: "Sensores",
+    projectWebKicker: "Desarrollo web",
+    projectWebTitle: "Sitio web para empresa local",
+    projectWebText: "Creación de un sitio web responsivo para una empresa local de consultoría, con información sobre sus servicios de gestión de inventarios.",
+    tagResponsive: "Responsivo",
+    projectAutomationKicker: "Automatización",
+    projectBotTitle: "Bot de Telegram con n8n",
+    projectBotText: "Configuración de un bot de Telegram conectado a flujos de n8n para responder mensajes y automatizar tareas.",
+    tagAutomation: "Automatización",
+    projectSoftwareKicker: "Desarrollo de software",
+    projectParkingTitle: "Sistema de control de parqueo",
+    projectParkingText: "Sistema de registro de vehículos que organiza nombre, tipo de vehículo y placa para apoyar el control y la consulta de entradas.",
+    tagRecords: "Registros",
+    tagVehicles: "Vehículos",
+    tagReports: "Consultas",
     educationEyebrow: "Aprendizaje",
     educationTitle: "Formación académica y técnica",
     educationSoftware: "Técnico en Desarrollo de Software",
@@ -58,6 +72,8 @@ const translations = {
     toolsTitle: "Herramientas y entornos IT",
     supportTitle: "Soporte y hardware",
     supportText: "Diagnóstico de equipos, mantenimiento preventivo y correctivo, y sistemas de climatización.",
+    stackTitle: "Mi stack tecnológico",
+    stackDescription: "Lenguajes, plataformas y herramientas que utilizo en mis proyectos.",
     adaptiveTitle: "Habilidades adaptativas",
     adaptiveOne: "Toma de decisiones rápida y acertada.",
     adaptiveTwo: "Tolerancia al trabajo bajo presión y resolución de problemas.",
@@ -65,16 +81,21 @@ const translations = {
     adaptiveFour: "Proactividad, organización, colaboración y buenas relaciones interpersonales.",
     aboutEyebrow: "Perfil",
     aboutTitle: "Sobre mí",
-    aboutText: "Fuera del ámbito tecnológico disfruto buscar soluciones a problemas matemáticos, compartir con familiares y amigos, y participar en actividades deportivas y retóricas. Estas experiencias me ayudan a procesar información desde distintas perspectivas y aportan valor a mi trabajo como desarrollador.",
+    aboutText: "Mi interés por la tecnología comenzó a los 12 años, cuando recibí mi primera computadora. Desde entonces exploro la programación y el diseño de software para crear soluciones. Fuera del ámbito tecnológico disfruto buscar soluciones a problemas matemáticos, compartir con familiares y amigos, y participar en actividades deportivas y retóricas. Estas experiencias me ayudan a procesar información desde distintas perspectivas y aportan valor a mi trabajo como desarrollador.",
     languagesTitle: "Idiomas",
     spanish: "Español",
     native: "Nativo",
     english: "Inglés",
     intermediate: "Intermedio",
-    recommendationsEyebrow: "Referencias",
-    recommendationsTitle: "Recomendaciones",
-    recommendationsDescription: "Referencias disponibles en Villa de los Niños.",
-    referencePlace: "Villa de los Niños",
+    approachEyebrow: "Mi forma de aportar",
+    approachTitle: "Un perfil que conecta software y electrónica",
+    approachDescription: "Me interesa crear soluciones útiles combinando desarrollo, pensamiento lógico y tecnología aplicada.",
+    approachSoftwareTitle: "Software con propósito",
+    approachSoftwareText: "Me motiva desarrollar experiencias web y móviles claras y accesibles, como la plataforma ALBA para adultos mayores, cuidadores y personal médico.",
+    approachSystemsTitle: "Visión entre sistemas",
+    approachSystemsText: "Mi formación en software y electrónica industrial me permite trabajar tanto con aplicaciones y datos como con circuitos, microcontroladores y sensores.",
+    approachGrowthTitle: "Aprendizaje y colaboración",
+    approachGrowthText: "Disfruto aprender tecnologías nuevas, resolver problemas desde distintas perspectivas y colaborar de forma organizada en equipos.",
     contactEyebrow: "Conversemos",
     contactTitle: "¿Trabajamos juntos?",
     contactText: "Estoy listo para aportar soluciones de software y tecnología a nuevos retos.",
@@ -122,6 +143,20 @@ const translations = {
     projectArduinoTitle: "Microcontrollers and sensors",
     projectArduinoText: "Programming Arduino Uno and Mega boards to automate processes; designing and simulating circuits in Proteus before assembly, with technical support and sensor instrumentation.",
     tagSensors: "Sensors",
+    projectWebKicker: "Web development",
+    projectWebTitle: "Website for a local business",
+    projectWebText: "Built a responsive website for a local consulting business, presenting its services including inventory management.",
+    tagResponsive: "Responsive",
+    projectAutomationKicker: "Automation",
+    projectBotTitle: "Telegram bot with n8n",
+    projectBotText: "Configured a Telegram bot connected to n8n workflows to respond to messages and automate tasks.",
+    tagAutomation: "Automation",
+    projectSoftwareKicker: "Software development",
+    projectParkingTitle: "Parking management system",
+    projectParkingText: "A vehicle registration system that records names, vehicle types, and license plates to support parking control and entry lookups.",
+    tagRecords: "Records",
+    tagVehicles: "Vehicles",
+    tagReports: "Lookups",
     educationEyebrow: "Learning",
     educationTitle: "Education and technical training",
     educationSoftware: "Software Development Technician",
@@ -139,6 +174,8 @@ const translations = {
     toolsTitle: "Tools and IT environments",
     supportTitle: "Technical support and hardware",
     supportText: "Equipment diagnostics, preventive and corrective maintenance, and HVAC systems.",
+    stackTitle: "My technology stack",
+    stackDescription: "Languages, platforms, and tools I use in my projects.",
     adaptiveTitle: "Adaptive skills",
     adaptiveOne: "Quick and sound decision-making.",
     adaptiveTwo: "Ability to work under pressure and solve problems.",
@@ -146,16 +183,21 @@ const translations = {
     adaptiveFour: "Proactivity, organization, collaboration, and strong interpersonal skills.",
     aboutEyebrow: "Profile",
     aboutTitle: "About me",
-    aboutText: "Outside of technology, I enjoy solving mathematical problems, spending time with family and friends, and taking part in sports and public speaking activities. These experiences help me process information from different perspectives and bring added value to my work as a developer.",
+    aboutText: "My interest in technology began at age 12, when I got my first computer. Since then, I have explored programming and software design to create solutions. Outside of technology, I enjoy solving mathematical problems, spending time with family and friends, and taking part in sports and public speaking activities. These experiences help me process information from different perspectives and bring added value to my work as a developer.",
     languagesTitle: "Languages",
     spanish: "Spanish",
     native: "Native",
     english: "English",
     intermediate: "Intermediate",
-    recommendationsEyebrow: "References",
-    recommendationsTitle: "References",
-    recommendationsDescription: "References available at Villa de los Niños.",
-    referencePlace: "Villa de los Niños",
+    approachEyebrow: "How I contribute",
+    approachTitle: "A profile connecting software and electronics",
+    approachDescription: "I'm interested in creating useful solutions by combining development, logical thinking, and applied technology.",
+    approachSoftwareTitle: "Purpose-driven software",
+    approachSoftwareText: "I'm motivated to build clear and accessible web and mobile experiences, such as the ALBA platform for older adults, caregivers, and medical staff.",
+    approachSystemsTitle: "Systems thinking",
+    approachSystemsText: "My background in software and industrial electronics lets me work with applications and data as well as circuits, microcontrollers, and sensors.",
+    approachGrowthTitle: "Learning and collaboration",
+    approachGrowthText: "I enjoy learning new technologies, solving problems from different perspectives, and collaborating with teams in an organized way.",
     contactEyebrow: "Let's connect",
     contactTitle: "Let's work together",
     contactText: "I'm ready to bring software and technology solutions to new challenges.",
@@ -168,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
   const languageToggle = document.getElementById("languageToggle");
+  const themeToggle = document.getElementById("themeToggle");
   const paletteSelect = document.getElementById("paletteSelect");
   let language = localStorage.getItem("portfolio-language") === "en" ? "en" : "es";
 
@@ -186,6 +229,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (translation) element.textContent = translation;
     });
 
+    document.querySelector(".portrait-image").alt = language === "es"
+      ? "Fotografía de Edgar Sánchez"
+      : "Photo of Edgar Sánchez";
+    document.querySelector(".portrait-card").setAttribute(
+      "aria-label",
+      language === "es" ? "Fotografía de Edgar Sánchez" : "Photo of Edgar Sánchez"
+    );
     languageToggle.textContent = language === "es" ? "EN" : "ES";
     languageToggle.setAttribute(
       "aria-label",
@@ -202,17 +252,37 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("portfolio-language", language);
   };
 
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    const targetTheme = theme === "dark" ? "light" : "dark";
+    const label = language === "es"
+      ? (targetTheme === "light" ? "Cambiar a modo claro" : "Cambiar a modo oscuro")
+      : (targetTheme === "light" ? "Switch to light mode" : "Switch to dark mode");
+    themeToggle.setAttribute("aria-label", label);
+    themeToggle.title = label;
+    document.querySelector('meta[name="theme-color"]').content =
+      theme === "dark" ? "#0b1220" : "#f4f7fb";
+    localStorage.setItem("portfolio-theme", theme);
+  };
+
   const savedPalette = localStorage.getItem("portfolio-palette");
   const validPalettes = ["blue", "emerald", "violet", "amber"];
   const initialPalette = validPalettes.includes(savedPalette) ? savedPalette : "blue";
+  const initialTheme = localStorage.getItem("portfolio-theme") === "light" ? "light" : "dark";
   root.dataset.palette = initialPalette;
   paletteSelect.value = initialPalette;
   document.getElementById("currentYear").textContent = new Date().getFullYear();
 
   applyLanguage(language);
+  applyTheme(initialTheme);
 
   languageToggle.addEventListener("click", () => {
     applyLanguage(language === "es" ? "en" : "es");
+    applyTheme(root.dataset.theme);
+  });
+
+  themeToggle.addEventListener("click", () => {
+    applyTheme(root.dataset.theme === "dark" ? "light" : "dark");
   });
 
   paletteSelect.addEventListener("change", () => {

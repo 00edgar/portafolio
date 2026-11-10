@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,15 @@
           <option value="violet" data-i18n="colorViolet">Violeta</option>
           <option value="amber" data-i18n="colorAmber">Ámbar</option>
         </select>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo claro" title="Cambiar a modo claro">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20.2 15.1A8.6 8.6 0 0 1 8.9 3.8 8.7 8.7 0 1 0 20.2 15.1Z" />
+          </svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+          </svg>
+        </button>
         <button class="language-toggle" id="languageToggle" type="button" aria-label="Change language to English">EN</button>
       </div>
     </nav>
@@ -41,10 +50,7 @@
       <div class="container hero-layout">
         <aside class="portrait-card reveal" aria-label="Fotografía de Edgar Sánchez">
           <div class="portrait-frame">
-            <div class="portrait-placeholder">
-              <span class="portrait-initials" aria-hidden="true">ES</span>
-              <span data-i18n="photoPrompt">Tu fotografía profesional</span>
-            </div>
+            <img class="portrait-image" src="foto.png" alt="Fotografía de Edgar Sánchez" fetchpriority="high">
           </div>
           <p class="portrait-caption" data-i18n="portraitCaption">Técnico en Desarrollo de Software</p>
         </aside>
@@ -127,6 +133,27 @@
             <p data-i18n="projectArduinoText">Programación de Arduino Uno y Mega para automatizar procesos; diseño y simulación de circuitos en Proteus antes del montaje, con soporte técnico e instrumentación de sensores.</p>
             <ul class="tags"><li>Arduino</li><li>Proteus</li><li data-i18n="tagSensors">Sensores</li></ul>
           </article>
+          <article class="card project-card reveal">
+            <span class="project-number">04</span>
+            <p class="card-kicker" data-i18n="projectWebKicker">Desarrollo web</p>
+            <h3 data-i18n="projectWebTitle">Sitio web para empresa local</h3>
+            <p data-i18n="projectWebText">Creación de un sitio web responsivo para una empresa local de consultoría, con información sobre sus servicios de gestión de inventarios.</p>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li data-i18n="tagResponsive">Responsivo</li></ul>
+          </article>
+          <article class="card project-card reveal delay-1">
+            <span class="project-number">05</span>
+            <p class="card-kicker" data-i18n="projectAutomationKicker">Automatización</p>
+            <h3 data-i18n="projectBotTitle">Bot de Telegram con n8n</h3>
+            <p data-i18n="projectBotText">Configuración de un bot de Telegram conectado a flujos de n8n para responder mensajes y automatizar tareas.</p>
+            <ul class="tags"><li>n8n</li><li>Telegram</li><li data-i18n="tagAutomation">Automatización</li></ul>
+          </article>
+          <article class="card project-card reveal delay-2">
+            <span class="project-number">06</span>
+            <p class="card-kicker" data-i18n="projectSoftwareKicker">Desarrollo de software</p>
+            <h3 data-i18n="projectParkingTitle">Sistema de control de parqueo</h3>
+            <p data-i18n="projectParkingText">Sistema de registro de vehículos que organiza nombre, tipo de vehículo y placa para apoyar el control y la consulta de entradas.</p>
+            <ul class="tags"><li data-i18n="tagRecords">Registros</li><li data-i18n="tagVehicles">Vehículos</li><li data-i18n="tagReports">Consultas</li></ul>
+          </article>
         </div>
       </div>
     </section>
@@ -185,6 +212,62 @@
             <p data-i18n="supportText">Diagnóstico de equipos, mantenimiento preventivo y correctivo, y sistemas de climatización.</p>
           </article>
         </div>
+        <div class="stack-panel reveal">
+          <div class="stack-heading">
+            <h3 data-i18n="stackTitle">Mi stack tecnológico</h3>
+            <p data-i18n="stackDescription">Lenguajes, plataformas y herramientas que utilizo en mis proyectos.</p>
+          </div>
+          <ul class="stack-grid" aria-label="Tecnologías y lenguajes">
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" loading="lazy" decoding="async">
+              <span>JavaScript</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy" decoding="async">
+              <span>Python</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" loading="lazy" decoding="async">
+              <span>HTML5</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" loading="lazy" decoding="async">
+              <span>CSS3</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy" decoding="async">
+              <span>C / C++</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="" loading="lazy" decoding="async">
+              <span>Dart</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="" loading="lazy" decoding="async">
+              <span>Flutter</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="" loading="lazy" decoding="async">
+              <span>Firebase</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" loading="lazy" decoding="async">
+              <span>MySQL / SQL</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" decoding="async">
+              <span>PostgreSQL</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" alt="" loading="lazy" decoding="async">
+              <span>Arduino</span>
+            </li>
+            <li class="stack-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" loading="lazy" decoding="async">
+              <span>Git / GitHub</span>
+            </li>
+          </ul>
+        </div>
         <div class="adaptive-panel reveal">
           <h3 data-i18n="adaptiveTitle">Habilidades adaptativas</h3>
           <ul class="adaptive-list">
@@ -204,7 +287,7 @@
           <h2 data-i18n="aboutTitle">Sobre mí</h2>
         </div>
         <div class="about-copy reveal delay-1">
-          <p data-i18n="aboutText">Fuera del ámbito tecnológico disfruto buscar soluciones a problemas matemáticos, compartir con familiares y amigos, y participar en actividades deportivas y retóricas. Estas experiencias me ayudan a procesar información desde distintas perspectivas y aportan valor a mi trabajo como desarrollador.</p>
+          <p data-i18n="aboutText">Mi interés por la tecnología comenzó a los 12 años, cuando recibí mi primera computadora. Desde entonces exploro la programación y el diseño de software para crear soluciones. Fuera del ámbito tecnológico disfruto buscar soluciones a problemas matemáticos, compartir con familiares y amigos, y participar en actividades deportivas y retóricas. Estas experiencias me ayudan a procesar información desde distintas perspectivas y aportan valor a mi trabajo como desarrollador.</p>
           <div class="language-card">
             <h3 data-i18n="languagesTitle">Idiomas</h3>
             <p><span data-i18n="spanish">Español</span><span data-i18n="native">Nativo</span></p>
@@ -214,23 +297,28 @@
       </div>
     </section>
 
-    <section class="section" id="recomendaciones">
+    <section class="section" id="enfoque">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="recommendationsEyebrow">Referencias</span></p>
-          <h2 data-i18n="recommendationsTitle">Recomendaciones</h2>
-          <p class="section-description" data-i18n="recommendationsDescription">Referencias disponibles en Villa de los Niños.</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="approachEyebrow">Mi forma de aportar</span></p>
+          <h2 data-i18n="approachTitle">Un perfil que conecta software y electrónica</h2>
+          <p class="section-description" data-i18n="approachDescription">Me interesa crear soluciones útiles combinando desarrollo, pensamiento lógico y tecnología aplicada.</p>
         </div>
-        <div class="recommendations-grid">
-          <article class="card recommendation-card reveal">
-            <h3>José Ramírez</h3>
-            <p data-i18n="referencePlace">Villa de los Niños</p>
-            <a href="tel:+50242244590">(+502) 4224-4590</a>
+        <div class="approach-grid">
+          <article class="card approach-card reveal">
+            <span class="approach-number">01</span>
+            <h3 data-i18n="approachSoftwareTitle">Software con propósito</h3>
+            <p data-i18n="approachSoftwareText">Me motiva desarrollar experiencias web y móviles claras y accesibles, como la plataforma ALBA para adultos mayores, cuidadores y personal médico.</p>
           </article>
-          <article class="card recommendation-card reveal delay-1">
-            <h3>Isaac Ramírez</h3>
-            <p data-i18n="referencePlace">Villa de los Niños</p>
-            <a href="tel:+50244973076">(+502) 4497-3076</a>
+          <article class="card approach-card reveal delay-1">
+            <span class="approach-number">02</span>
+            <h3 data-i18n="approachSystemsTitle">Visión entre sistemas</h3>
+            <p data-i18n="approachSystemsText">Mi formación en software y electrónica industrial me permite trabajar tanto con aplicaciones y datos como con circuitos, microcontroladores y sensores.</p>
+          </article>
+          <article class="card approach-card reveal delay-2">
+            <span class="approach-number">03</span>
+            <h3 data-i18n="approachGrowthTitle">Aprendizaje y colaboración</h3>
+            <p data-i18n="approachGrowthText">Disfruto aprender tecnologías nuevas, resolver problemas desde distintas perspectivas y colaborar de forma organizada en equipos.</p>
           </article>
         </div>
       </div>
