@@ -801,6 +801,50 @@ select {
   text-align: center;
 }
 
+.cv-section {
+  border-top: 1px solid rgba(166, 180, 200, 0.12);
+  background: var(--section-soft-bg);
+}
+
+.cv-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--border);
+  border-radius: 1.1rem;
+  background: var(--card-bg);
+}
+
+.cv-content h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+
+.cv-description {
+  max-width: 620px;
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
+.cv-download {
+  flex: 0 0 auto;
+  gap: 0.6rem;
+}
+
+.cv-download svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .contact-inner {
   display: flex;
   flex-direction: column;
@@ -958,6 +1002,11 @@ select {
   .about-layout {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .cv-content {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
